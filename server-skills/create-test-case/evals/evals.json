@@ -1,0 +1,33 @@
+{
+  "skill": "create-test-case",
+  "test_cases": [
+    {
+      "name": "create_simple_tc_with_steps",
+      "input": "Create a new TC in the folder Experiment with title \"This is a test case\". Add 10 steps with a blank Req ID, Action \"Action for Step #\", Expected Result \"Expecting Step # action completed\" where # is the number of the step.",
+      "assertions": [
+        "Creates or reuses folder Experiment",
+        "Creates new TC item with the given title",
+        "Sets field 7815 to a 10-element JSON array",
+        "Each step has empty ReqID, action containing \"Action for Step N\", expected containing \"Expecting Step N action completed\""
+      ]
+    },
+    {
+      "name": "add_description_and_setup",
+      "input": "Add a Description to TC-93: \"This describes this test case with 10 steps\". Add a Test Setup that says \"This is the setup instructions\".",
+      "assertions": [
+        "Updates field 7798 with the description HTML",
+        "Updates field 7809 with the setup HTML",
+        "Preserves existing steps"
+      ]
+    },
+    {
+      "name": "direction_steps_with_files",
+      "input": "For directions 0,45,90,135,180,225,270,315 add steps where the action is a numbered list: Load the song named NG_dir_XXX_player_mV.hex for direction N; Analyze to acquire and process the data. Expected result: Summary view displays with corresponding direction bump and \"8\" segments. Also add the file list to Test Setup with the note \"Transfer files to system with Player USB attached.\"",
+      "assertions": [
+        "Each direction step has an <ol> action containing the exact filename",
+        "Expected result mentions the direction and \"8\" segments",
+        "Test Setup contains the transfer sentence and a <ul> of the eight filenames"
+      ]
+    }
+  ]
+}

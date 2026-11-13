@@ -1,0 +1,29 @@
+{
+  "skill": "create-test-case",
+  "test_cases": [
+    {
+      "input": "Create a new test case in the Experiment folder",
+      "should_trigger": true
+    },
+    {
+      "input": "Add steps to a new TC with ReqID, Action, and Expected Result",
+      "should_trigger": true
+    },
+    {
+      "input": "Update the Test Setup of TC-93 with a list of song files",
+      "should_trigger": true
+    },
+    {
+      "input": "Replace step 5 with a new ReqID and action",
+      "should_trigger": true
+    },
+    {
+      "input": "Spellcheck the requirements in F-SRS-16",
+      "should_trigger": false
+    },
+    {
+      "input": "Create executable test cases from the System Tests folder",
+      "should_trigger": false
+    }
+  ]
+}

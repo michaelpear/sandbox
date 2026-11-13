@@ -1,0 +1,25 @@
+{
+  "skill": "create-executable-test-case",
+  "test_cases": [
+    {
+      "input": "Create executable test cases from the TC folders F-TC-10 and F-TC-11 into F-XTC-107",
+      "should_trigger": true
+    },
+    {
+      "input": "Generate XTC items from those test cases under the v2.0.2 Verification folder",
+      "should_trigger": true
+    },
+    {
+      "input": "Make test runs from the System Tests V2.0 folder",
+      "should_trigger": true
+    },
+    {
+      "input": "Spellcheck the PRS items in PHYSCADE_V2",
+      "should_trigger": false
+    },
+    {
+      "input": "Remove empty lines from the DOC text blocks",
+      "should_trigger": false
+    }
+  ]
+}

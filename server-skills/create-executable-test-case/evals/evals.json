@@ -1,0 +1,35 @@
+{
+  "skill": "create-executable-test-case",
+  "test_cases": [
+    {
+      "name": "create_from_named_folders",
+      "input": "Create XTC items from the TC folders F-TC-10 and F-TC-11 under destination F-XTC-107",
+      "assertions": [
+        "Resolves the two source folders",
+        "Creates matching subfolders under F-XTC-107",
+        "Creates one XTC per TC with title pattern 'title (TC-xx)'",
+        "Sets uplink from each XTC to its TC",
+        "Copies test steps into the XTC Test Case Steps field with empty result/comment",
+        "Copies Description, Test Setup, Test Method, and Test Level into the XTC Description",
+        "Copies non-empty Test Files to XTC Test Input Files"
+      ]
+    },
+    {
+      "name": "create_from_folder_titles",
+      "input": "Generate executable test cases from the folders named System Tests V2.0 and Firmware Verification Tests into the v2.0.2 Verification folder",
+      "assertions": [
+        "Resolves folders by title",
+        "Places new XTCs in matching subfolders",
+        "Ignores any Out of Scope items"
+      ]
+    },
+    {
+      "name": "handles_empty_steps",
+      "input": "Create XTCs from F-TC-10 under F-XTC-107; note that some TCs may have no steps",
+      "assertions": [
+        "Creates the XTC and uplink even when the TC has no steps",
+        "Reports which items had no steps"
+      ]
+    }
+  ]
+}
