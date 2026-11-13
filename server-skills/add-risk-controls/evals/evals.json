@@ -1,0 +1,17 @@
+[
+  {
+    "id": "add-single-control",
+    "prompt": "Add CSR-47 as a risk control to CSRA-5",
+    "expected": "CSR-47 appears in downLinkList and risk2 content is unchanged"
+  },
+  {
+    "id": "add-multiple-controls",
+    "prompt": "Add CSR-26, CSR-27, and CSR-28 as risk controls to CSRA-2",
+    "expected": "All three CSRs appear in downLinkList and risk2 content is unchanged"
+  },
+  {
+    "id": "preserve-existing",
+    "prompt": "Add CSR-13 as a risk control to a CSRA that already has other CSR downlinks",
+    "expected": "Existing downlinks remain, new CSR is added, risk2 content is unchanged"
+  }
+]
