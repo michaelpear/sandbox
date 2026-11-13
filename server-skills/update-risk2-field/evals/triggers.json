@@ -1,0 +1,10 @@
+{
+  "skill": "update-risk2-field",
+  "test_cases": [
+    {"input": "update the mitigation description on CSRA-22", "should_trigger": true},
+    {"input": "change the threat description in CSRA-5", "should_trigger": true},
+    {"input": "edit the risk2 field on RISK-71", "should_trigger": true},
+    {"input": "add CSR-22 as a risk control downlink", "should_trigger": false},
+    {"input": "spellcheck the CSR items", "should_trigger": false}
+  ]
+}

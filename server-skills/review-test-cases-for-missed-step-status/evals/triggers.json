@@ -1,0 +1,25 @@
+{
+  "skill": "review-test-cases-for-missed-step-status",
+  "test_cases": [
+    {
+      "input": "Review test cases for missed step status on XTC-140",
+      "should_trigger": true
+    },
+    {
+      "input": "Find steps without a Passed/Failed status on XTC-22",
+      "should_trigger": true
+    },
+    {
+      "input": "Check XTC-55 for empty result fields",
+      "should_trigger": true
+    },
+    {
+      "input": "Identify issues in test execution for XTC-140",
+      "should_trigger": false
+    },
+    {
+      "input": "Fill empty comments for XTC-140",
+      "should_trigger": false
+    }
+  ]
+}

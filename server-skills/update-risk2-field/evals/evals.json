@@ -1,0 +1,33 @@
+{
+  "skill": "update-risk2-field",
+  "test_cases": [
+    {
+      "name": "update_mitigation_description",
+      "input": "Add a bullet about antivirus scans to the Mitigation Description of CSRA-22",
+      "assertions": [
+        "Shows exact proposed HTML and waits for approval",
+        "Uses JSON PUT with itemProperties.fx7846",
+        "Includes onlyThoseFields=1 and failOnCleanup=0",
+        "Re-GETs and confirms the new text"
+      ]
+    },
+    {
+      "name": "update_threat_description",
+      "input": "Revise the Threat Description on CSRA-5 to mention USB HID devices",
+      "assertions": [
+        "Identifies the correct factor by label",
+        "Shows before/after and waits for approval",
+        "Preserves other factors and mitigations array"
+      ]
+    },
+    {
+      "name": "recover_cleared_risk2",
+      "input": "The risk2 field on CSRA-22 is empty after a failed update; restore it and add the approved mitigation text",
+      "assertions": [
+        "Fetches a prior version to recover the JSON",
+        "Re-applies the approved change",
+        "Writes with the correct itemProperties payload"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "skill": "test-summary-report",
+  "test_cases": [
+    {
+      "name": "folder_summary",
+      "input": "Provide a test summary report for the XTCs in folder F-XTC-109",
+      "assertions": [
+        "Lists XTCs in the folder",
+        "Outputs a table with ID, Title, Tester, Reviewer, Test Date, Test Run Result",
+        "Does not modify any items"
+      ]
+    },
+    {
+      "name": "handles_empty_fields",
+      "input": "Test summary for F-XTC-109",
+      "assertions": [
+        "Shows — for empty Tester/Reviewer/Date/Result fields",
+        "Includes all XTCs found"
+      ]
+    },
+    {
+      "name": "single_item",
+      "input": "Summary for XTC-140",
+      "assertions": [
+        "Produces a one-row table for the requested XTC"
+      ]
+    }
+  ]
+}

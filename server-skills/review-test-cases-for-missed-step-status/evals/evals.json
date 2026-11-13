@@ -1,0 +1,33 @@
+{
+  "skill": "review-test-cases-for-missed-step-status",
+  "test_cases": [
+    {
+      "name": "report_and_wait_for_approval",
+      "input": "Review test cases for missed step status on XTC-140",
+      "assertions": [
+        "Fetches the XTC",
+        "Identifies steps whose result is empty or missing",
+        "Outputs a table of findings",
+        "Asks for approval before writing any Reviewer Comments note"
+      ]
+    },
+    {
+      "name": "append_note_after_approval",
+      "input": "Yes, add the missing result status comments",
+      "assertions": [
+        "Appends 'Missing result status for steps <list>' to Reviewer Comments",
+        "Uses onlyThoseFields and current maxVersion",
+        "Confirms the final version"
+      ]
+    },
+    {
+      "name": "folder_review_with_exclusions",
+      "input": "Review test cases for missed step status in F-XTC-109, skip XTC-190",
+      "assertions": [
+        "Collects XTCs from the folder",
+        "Skips excluded items",
+        "Reports findings and waits for approval"
+      ]
+    }
+  ]
+}
