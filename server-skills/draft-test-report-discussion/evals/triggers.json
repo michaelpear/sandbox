@@ -1,0 +1,25 @@
+{
+  "skill": "draft-test-report-discussion",
+  "test_cases": [
+    {
+      "input": "Draft a Discussion section for the XTCs in F-XTC-109",
+      "should_trigger": true
+    },
+    {
+      "input": "Summarize deviations and system issues for the test report",
+      "should_trigger": true
+    },
+    {
+      "input": "Review the XTCs and separate documentation problems from real system failures",
+      "should_trigger": true
+    },
+    {
+      "input": "Fill empty comments on XTC-194",
+      "should_trigger": false
+    },
+    {
+      "input": "Create a new test case TC",
+      "should_trigger": false
+    }
+  ]
+}

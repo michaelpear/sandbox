@@ -1,0 +1,25 @@
+{
+  "skill": "identify-issues-in-test-execution",
+  "test_cases": [
+    {
+      "input": "Identify issues in test execution for XTC-140",
+      "should_trigger": true
+    },
+    {
+      "input": "Find non-passed steps on XTC-22",
+      "should_trigger": true
+    },
+    {
+      "input": "Review XTC-55 for any failed or deviation steps",
+      "should_trigger": true
+    },
+    {
+      "input": "Fill empty comments for XTC-140",
+      "should_trigger": false
+    },
+    {
+      "input": "Create a new test case",
+      "should_trigger": false
+    }
+  ]
+}

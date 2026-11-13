@@ -1,0 +1,25 @@
+{
+  "skill": "fill-empty-xtc-comments",
+  "test_cases": [
+    {
+      "input": "Fill empty comments for test XTC-140",
+      "should_trigger": true
+    },
+    {
+      "input": "Fill empty comments for test XTC-22",
+      "should_trigger": true
+    },
+    {
+      "input": "Make sure the Comments fields are not empty on XTC-55",
+      "should_trigger": true
+    },
+    {
+      "input": "Spellcheck the documents",
+      "should_trigger": false
+    },
+    {
+      "input": "Create a new test case",
+      "should_trigger": false
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "skill": "fill-empty-xtc-comments",
+  "test_cases": [
+    {
+      "name": "list_empty_steps_and_wait",
+      "input": "Fill empty comments for test XTC-140",
+      "assertions": [
+        "Fetches the item",
+        "Identifies steps with empty comment",
+        "Lists the step numbers",
+        "Asks for approval before writing"
+      ]
+    },
+    {
+      "name": "update_after_approval",
+      "input": "Yes, fill the empty comments on XTC-140",
+      "assertions": [
+        "Sets empty comments to the string None",
+        "PUTs the steps field",
+        "Appends the exact note listing the step numbers to Reviewer Comments",
+        "Confirms the final version"
+      ]
+    },
+    {
+      "name": "no_empty_comments",
+      "input": "Fill empty comments for test XTC-999",
+      "assertions": [
+        "Reports that there are no empty comments",
+        "Does not perform any write"
+      ]
+    }
+  ]
+}

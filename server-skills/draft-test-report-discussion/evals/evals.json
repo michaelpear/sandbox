@@ -1,0 +1,32 @@
+{
+  "skill": "draft-test-report-discussion",
+  "test_cases": [
+    {
+      "name": "draft_from_folder",
+      "input": "Draft a Discussion section for the XTCs in F-XTC-109",
+      "assertions": [
+        "Fetches XTCs in the named folder",
+        "Separates documentation deviations from system issues",
+        "Preserves GitHub and attachment hyperlinks as <a> tags",
+        "Presents the draft and waits for approval before any write"
+      ]
+    },
+    {
+      "name": "insert_after_approval",
+      "input": "I approve replacing the Discussion field of DOC-47 with this text",
+      "assertions": [
+        "Re-GETs the DOC for maxVersion",
+        "Updates only the Discussion fieldValue",
+        "Confirms hyperlinks are present after the PUT"
+      ]
+    },
+    {
+      "name": "restore_lost_links",
+      "input": "The GitHub issues lost their hyperlinks. Redo the Discussion with clickable links",
+      "assertions": [
+        "Re-fetches source XTC reviewer comments for original hrefs",
+        "Emits real <a href> tags for each GitHub issue and attachment"
+      ]
+    }
+  ]
+}

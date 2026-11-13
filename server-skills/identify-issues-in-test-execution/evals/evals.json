@@ -1,0 +1,33 @@
+{
+  "skill": "identify-issues-in-test-execution",
+  "test_cases": [
+    {
+      "name": "report_non_passed_non_empty",
+      "input": "Identify issues in test execution for XTC-140",
+      "assertions": [
+        "Fetches the XTC",
+        "Identifies steps whose result is non-empty and not exactly p",
+        "Excludes steps with empty result",
+        "Outputs a markdown table of Step, Result, and Comment",
+        "Does not modify the item"
+      ]
+    },
+    {
+      "name": "all_passed_or_empty",
+      "input": "Identify issues in XTC-999",
+      "assertions": [
+        "Reports that there are no issues (non-passed non-empty results)",
+        "Does not write any updates"
+      ]
+    },
+    {
+      "name": "include_deviation_exclude_empty",
+      "input": "Find non-passed steps on XTC-140",
+      "assertions": [
+        "Includes steps with result d",
+        "Excludes steps with empty result",
+        "Cleans HTML and images in comments for readability"
+      ]
+    }
+  ]
+}
